@@ -1,0 +1,15 @@
+{
+  "profiles": {
+    "Docker Compose": {
+      "commandName": "DockerCompose",
+      "commandVersion": "1.0",
+      "serviceActions": {
+        "tangyweb_client": "StartDebugging",
+        "tangyweb_server": "StartDebugging",
+        "tangyweb_api": "StartDebugging",
+        "tangy_gateway": "StartDebugging",
+        "api_gateway": "StartDebugging"
+      }
+    }
+  }
+}

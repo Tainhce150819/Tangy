@@ -1,0 +1,29 @@
+version: '3.4'
+
+services:
+  tangyweb_client:
+    image: ${DOCKER_REGISTRY-}tangyweb_client
+    build:
+      context: .
+      dockerfile: TangyWeb_Client/Dockerfile
+
+  tangyweb_api:
+    image: ${DOCKER_REGISTRY-}tangyweb_api
+    build:
+      context: .
+      dockerfile: TangyWeb_API/Dockerfile
+
+
+  tangy_gateway:
+    image: ${DOCKER_REGISTRY-}tangy_gateway
+    build:
+      context: .
+      dockerfile: TangY_Gateway/Dockerfile
+
+
+  api_gateway:
+    image: ${DOCKER_REGISTRY-}api_gateway
+    build:
+      context: .
+      dockerfile: API_GateWay/Dockerfile
+
